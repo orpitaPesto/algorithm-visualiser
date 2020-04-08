@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+ <head>
+ <meta charset = "UTF-8">
+ <title>Algorithm Visualizer</title>
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "./styles/style.css" />
+ </head>
+ <body>
+ <h1>Algorithm Visualizer</h1>
+ 
+ <div class="parentDiv">
+   <h2>Linear Search O(n)</h2>
+   <div id="linearDiv1">
+      <label class= "forLabel" for="linear_array">Enter the array :  </label>
+      <input type="text" id="linear_array" placeholder="4,6,7,8">
+      <button onclick="checkArray()">Submit</button>   
+   </div>
+   <label id="error"></label>
+   <br/>
+   <div id="linearDiv2">
+      <label class= "forLabel"  for="linear_search">Enter value to be searched : </label>
+      <input type="text" id="linear_search" placeholder="4">
+      <button onclick="findLinearElement()" disabled id="linearSerachBtn">Submit</button>   
+   </div>
+   <br/>
+   <div id="linearDiv3">
+     <table id="linearTable"></table>
+   </div>
+   <div id="linearDiv4">
+     <label class= "forLabel" >Result is : </label>
+     <label id="linear_search_result"></label>
+  </div>
+ </div>
+ 
+ <div class="parentDiv">
+   <h2>Binary Search O(log2N)</h2>
+   <div id="binaryDiv1">
+      <label class= "forLabel" for="binary_array">Enter the array :  </label>
+      <input type="text" id="binary_array" placeholder="4,6,7,8">
+      <button onclick="checkBinaryArray()">Submit</button>   
+   </div>
+   <label id="error"></label>
+   <br/>
+   <div id="binaryDiv2">
+      <label class= "forLabel"  for="binary_search">Enter value to be searched : </label>
+      <input type="text" id="binary_search" placeholder="4">
+      <button onclick="findBinaryElement()" disabled id="binarySerachBtn">Submit</button>   
+   </div>
+   <br/>
+   <div id="binaryDiv3">
+     <table id="binaryTable"></table>
+   </div>
+   <br/>
+   <div id="binaryDiv4">
+     <label class= "forLabel" >Result is : </label>
+     <label id="binary_search_result"></label>
+  </div>
+ </div>
+
+ <div class="parentDiv">
+   <h2>Selection Sort  O(n²)</h2>
+   <div id="selection_sortDiv1">
+      <label class= "forLabel" for="selection_sort_array">Enter the array :  </label>
+      <input type="text" id="selection_sort_array" placeholder="4,6,7,8">
+      <button onclick="SelectionSortArray()">Sort</button>   
+   </div>
+   <br/>
+   <div id="selection_sortDiv3">
+     <table id="selection_sortTable"></table>
+   </div>
+ </div>
+
+ <div class="parentDiv">
+   <h2>Bubble Sort  O(n²)</h2>
+   <div id="bubble_sortDiv1">
+      <label class= "forLabel" for="bubble_sort_array">Enter the array :  </label>
+      <input type="text" id="bubble_sort_array" placeholder="4,6,7,8">
+      <button onclick="BubbleSortArray()">Sort</button>   
+   </div>
+   <br/>
+   <div id="bubble_sortDiv3">
+     <table id="bubble_sortTable"></table>
+   </div>
+ </div>
+
+ <div class="parentDiv">
+   <h2>Insertion Sort  O(n²)</h2>
+   <div id="insertion_sortDiv1">
+      <label class= "forLabel" for="insertion_sort_array">Enter the array :  </label>
+      <input type="text" id="insertion_sort_array" placeholder="4,6,7,8">
+      <button onclick="InsertionSortArray()">Sort</button>   
+   </div>
+   <br/>
+   <div id="insertion_sortDiv3">
+     <table id="insertion_sortTable"></table>
+   </div>
+ </div>
+ <script src="./scripts/script.js"></script>
+ </body>
+</html>

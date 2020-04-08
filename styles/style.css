@@ -1,0 +1,65 @@
+h1, h2{
+    text-align: center;
+}
+.forLabel{
+    display: inline-block; 
+    width : 15% ;
+} 
+
+table {
+    /* border-collapse: separate; */
+    border-spacing: 0;
+  }
+  td {
+    padding: 10px 15px;
+  }
+td{
+    background: #f0f0f2;
+}
+  td:nth-child(1){
+    font-weight: bold;
+    background: #395870b8;
+}
+.coloredCells
+{
+    border: 5px solid red;
+    background: bisque;
+}
+.success
+{
+    border: 5px solid darkgreen;
+    background: greenyellow;
+}
+
+.low
+{
+    border: 5px solid rgb(100, 90, 0);
+    background: rgb(152, 238, 231);
+}
+
+.high
+{
+    border: 5px solid brown;
+    background: coral;
+}
+
+#linear_search_result{
+    color:blue;
+}
+
+.parentDiv {
+    border: 1px solid darkgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+.onSort{
+    color: black;
+    background: aquamarine;
+}
+
+.onSort td
+{
+    color: black;
+    background: aquamarine;
+}
